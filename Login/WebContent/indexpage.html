@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style2.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="box"></div>
+  <div class="container-forms">
+    <div class="container-info">
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Have an account?
+            </p>
+            <div class="btn">
+              Log in
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Don't have an account?
+            </p>
+            <div class="btn">
+              Sign up
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-form">
+      <div class="form-item log-in">
+        <div class="table">
+          <div class="table-cell">
+          
+          <form action="login1.jsp" method="post">
+            <input name="user" placeholder="Username" type="text" /><input name="password" placeholder="Password" type="Password" />
+            <div >
+               <input type="submit" class="btn" value="Submit">
+            </div>
+           </form>
+          </div>
+        </div>
+      </div>
+      <div class="form-item sign-up">
+        <div class="table">
+          <div class="table-cell">
+          <form action="register1.jsp" method="post">
+            <input name="fname" placeholder="First name" type="text" /><input type="text" placeholder="Last name" name="lname" /><input name="userid" placeholder="User name" type="text" /><input name="email" placeholder="Email" type="text" /><input name="password" placeholder="Password" type="Password" />
+            <div >
+              <input class="btn" type="submit" value="Register"/>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="jscode.js"></script>
+</body>
+</html>
