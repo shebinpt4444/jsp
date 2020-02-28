@@ -4,15 +4,18 @@ pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.SQLException" %>
 <%@page import="java.sql.DriverManager" %>
 <%
-
+//fetching values from form
 String userid=request.getParameter("user");
 String password=request.getParameter("password");
+//fetching data from database
 Class.forName("com.mysql.jdbc.Driver");
 java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
 Statement st= con.createStatement();
 ResultSet rs=st.executeQuery("select uname,password from registration");
 
 	int f=0;
+	
+//cheching login constrains
 while(rs.next())
 {
 	
